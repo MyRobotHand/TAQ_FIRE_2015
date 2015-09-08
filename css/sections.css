@@ -363,7 +363,10 @@ footer {
 	background-size: 100% 100%;
 }			
 			
-			
+#fashionRockaways { 
+	background-image:url(../rockaways/images/dot.jpg);
+	background-size: 100% 100%;
+}			
 							
 /*--- EARTH 2015 DOTS ---*/
 
