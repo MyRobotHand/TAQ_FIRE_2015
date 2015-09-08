@@ -340,6 +340,31 @@ footer {
 /*            
 			<div class="dotLayout"><div id="roadtripEverglades" class="dot">roadtrip</div></div>	*/
 			
+			
+/*--- FIRE 2015 DOTS ---*/
+
+#travellogCartagena { 
+	background-image:url(../cartagena/images/dot.jpg);
+	background-size: 100% 100%;
+}
+
+#photographerIceland { 
+	background-image:url(../iceland/images/dot.jpg);
+	background-size: 100% 100%;
+}
+
+#homeJoshuaTree { 
+	background-image:url(../joshuatree/images/dot.jpg);
+	background-size: 100% 100%;
+}		
+
+#beautyOahu { 
+	background-image:url(../beauty/oahu/images/dot.jpg);
+	background-size: 100% 100%;
+}			
+			
+			
+							
 /*--- EARTH 2015 DOTS ---*/
 
 #fieldworkMiki { 
