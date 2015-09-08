@@ -232,6 +232,19 @@ footer {
 	background-position: center center;
 }
 
+/*----------- FIRE 2015 --------------*/
+.da-thumbs .kalahari{
+	background-image: url(../images/preview-kalahari.png);
+}
+
+.da-thumbs .myanmar{
+	background-image: url(../images/preview-myanmar.png);
+}
+
+.da-thumbs .ptreyes{
+	background-image: url(../images/preview-ptreyes.png);
+}
+
 /*----------- EARTH 2015 --------------*/
 .da-thumbs .whiteSands{
 	background-image: url(../images/preview-white-sands.png);
