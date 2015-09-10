@@ -62,10 +62,19 @@
 						$(this).hide().delay(100*index).velocity({ opacity: 1 }, { display: "block" }, { duration: 2000 },"easeOutCirc");
     				});
 				});
+
+        $(document).on("ready", function() {
+          var cid = Math.floor(Math.random() * 0x7FFFFFFF) + "." +
+          Math.floor(Date.now() / 1000);
+          document.getElementById("tracker").src = 'https://ad.doubleclick.net/ddm/ad/N3727.2039703TINYATLASQUARTERLY/B8838549.122137790;sz=1x1;ord=' + cid + '?';
+        });
         </script>
     </head>
 </head>
 <body id="taqPage">
+
+
+
             <!-- NAVIGATION -->
             <div id="nav-buttons" class="pg-nav"><span class="pg-prev" id="pg-pageDown"></span><span class="pg-next" id="pg-pageUp"></span></div>
 
@@ -814,7 +823,7 @@
                </div><!-- end wrapper div -->
             </div>
             <!-- END PAGE 24 ------------------------------------------------------------->
-
+        <IMG id="tracker" SRC="" BORDER=0 WIDTH=1 HEIGHT=1 style="margin-left: -20px;"></A>      
 
         <!----------------------------------------------------------------->
         <script type="text/javascript" src="../../js/hammer.min.js"></script>
