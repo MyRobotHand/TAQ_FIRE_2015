@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Tiny Atlas Quarterly | Montauk Event</title>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+
+        <link rel="stylesheet" type="text/css" href="../css/normalize.css" />
+        <link rel="stylesheet" type="text/css" href="../../css/fonts.css" />
+        <link rel="stylesheet" type="text/css" href="../css/pages-events.css" />
+        <link rel="shortcut icon" href="../../images/favicon.png">
+
+        <script src="http://code.jquery.com/jquery-latest.js"></script>
+        <script src="../js/jquery.lazyload.min.js"></script>
+
+    </head>
+</head>
+<body>
+<script>
+var people = [
+    {
+        "image": "@_nata_2.JPG",
+        "name": "_nata_"
+    },
+    {
+        "image": "@_nata_3.JPG",
+        "name": "_nata_"
+    },
+    {
+        "image": "@_Nata_.jpg",
+        "name": "_nata_"
+    },
+    {
+        "image": "@absinthemindedswede.jpg",
+        "name": "absinthemindedswede"
+    },
+    {
+        "image": "@ahitofsarah_1.JPG",
+        "name": "ahitofsarah"
+    },
+    {
+        "image": "@ahitofsarah.JPG",
+        "name": "ahitofsarah"
+    },
+    {
+        "image": "@amandamarsalis_1.jpg",
+        "name": "amandamarsalis"
+    },
+    {
+        "image": "@amandamarsalis.jpg",
+        "name": "amandamarsalis"
+    },
+    {
+        "image": "@amandavanvels.jpg",
+        "name": "amandavanvels"
+    },
+    {
+        "image": "@aminanissen_1.jpg",
+        "name": "aminanissen"
+    },
+    {
+        "image": "@aminanissen_2.jpg",
+        "name": "aminanissen"
+    },
+    {
+        "image": "@aminanissen.jpg",
+        "name": "aminanissen"
+    },
+    {
+        "image": "@andyspade.JPG",
+        "name": "andyspade"
+    },
+    {
+        "image": "@angrybaker.jpg",
+        "name": "angrybaker"
+    },
+    {
+        "image": "@annamoller_.jpg",
+        "name": "annamoller_"
+    },
+    {
+        "image": "@annapihan_3.jpg",
+        "name": "annapihan"
+    },
+    {
+        "image": "@annapihan.jpg",
+        "name": "annapihan"
+    },
+    {
+        "image": "@anythingtuscan.jpg",
+        "name": "anythingtuscan"
+    },
+    {
+        "image": "@aquinnm.jpg",
+        "name": "aquinnm"
+    },
+    {
+        "image": "@Ashleycamper_1.jpg",
+        "name": "Ashleycamper"
+    },
+    {
+        "image": "@ashleycamper_new.jpg",
+        "name": "ashleycamper"
+    },
+    {
+        "image": "@asrosenvinge.jpg",
+        "name": "asrosenvinge"
+    },
+    {
+        "image": "@britt_albert.jpg",
+        "name": "britt_albert"
+    },
+    {
+        "image": "@buffyelias.JPG",
+        "name": "buffyelias"
+    },
+    {
+        "image": "@bythebrush.jpg",
+        "name": "bythebrush"
+    },
+    {
+        "image": "@carleyscamera.JPG",
+        "name": "carleyscamera"
+    },
+    {
+        "image": "@Ceciliaxyang.jpg",
+        "name": "Ceciliaxyang"
+    },
+    {
+        "image": "@challomallo_1.jpg",
+        "name": "challomallo"
+    },
+    {
+        "image": "@Chloe_Kiser_1.jpg",
+        "name": "Chloe_Kiser"
+    },
+    {
+        "image": "@Chloe_Kiser.jpg",
+        "name": "Chloe_Kiser"
+    },
+    {
+        "image": "@chrisrsimpson.jpg",
+        "name": "chrisrsimpson"
+    },
+    {
+        "image": "@cjane9JPG.JPG",
+        "name": "cjane9JPG"
+    },
+    {
+        "image": "@daejafallas_1.JPG",
+        "name": "daejafallas"
+    },
+    {
+        "image": "@daejafallas.JPG",
+        "name": "daejafallas"
+    },
+    {
+        "image": "@dankuras.jpg",
+        "name": "dankuras"
+    },
+    {
+        "image": "@dantom.jpg",
+        "name": "dantom"
+    },
+    {
+        "image": "@darcyrogers.jpg",
+        "name": "darcyrogers"
+    },
+    {
+        "image": "@diloharm_1.JPG",
+        "name": "diloharm"
+    },
+    {
+        "image": "@diloharm_2.jpg",
+        "name": "diloharm"
+    },
+    {
+        "image": "@diloharm_3.JPG",
+        "name": "diloharm"
+    },
+    {
+        "image": "@diloharm_4.JPG",
+        "name": "diloharm"
+    },
+    {
+        "image": "@diloharm.JPG",
+        "name": "diloharm"
+    },
+    {
+        "image": "@dinnerswithfriends_1.jpg",
+        "name": "dinnerswithfriends"
+    },
+    {
+        "image": "@dinnerswithfriends_2.JPG",
+        "name": "dinnerswithfriends"
+    },
+    {
+        "image": "@dinnerswithfriends.JPG",
+        "name": "dinnerswithfriends"
+    },
+    {
+        "image": "@dirka_2.JPG",
+        "name": "dirka"
+    },
+    {
+        "image": "@dirka.jpg",
+        "name": "dirka"
+    },
+    {
+        "image": "@elf_girl_1.jpg",
+        "name": "elf_girl"
+    },
+    {
+        "image": "@elf_girl.jpg",
+        "name": "elf_girl"
+    },
+    {
+        "image": "@elice_f_1.JPG",
+        "name": "elice_f"
+    },
+    {
+        "image": "@elice_f_2.JPG",
+        "name": "elice_f"
+    },
+    {
+        "image": "@elice_f_3.JPG",
+        "name": "elice_f"
+    },
+    {
+        "image": "@elice_f.jpg",
+        "name": "elice_f"
+    },
+    {
+        "image": "@emilydulla.jpg",
+        "name": "emilydulla"
+    },
+    {
+        "image": "@enroutesomewhere.jpg",
+        "name": "enroutesomewhere"
+    },
+    {
+        "image": "@Fuggiamo_1.jpg",
+        "name": "Fuggiamo"
+    },
+    {
+        "image": "@fuggiamo.jpg",
+        "name": "fuggiamo"
+    },
+    {
+        "image": "@gab.JPG",
+        "name": "gab"
+    },
+    {
+        "image": "@gmateus.JPG",
+        "name": "gmateus"
+    },
+    {
+        "image": "@goldenwestgoods.jpg",
+        "name": "goldenwestgoods"
+    },
+    {
+        "image": "@hannasgrogan_new.jpg",
+        "name": "hannasgrogan_new"
+    },
+    {
+        "image": "@heidilender.jpg",
+        "name": "heidilender"
+    },
+    {
+        "image": "@heidilender.jpg",
+        "name": "heidilender"
+    },
+    {
+        "image": "@hellopoe.jpg",
+        "name": "hellopoe"
+    },
+    {
+        "image": "@ian_mckay.jpg",
+        "name": "ian_mckay"
+    },
+    {
+        "image": "@jadybirrd.jpg",
+        "name": "jadybirrd"
+    },
+    {
+        "image": "@jen_trahan_1.JPG",
+        "name": "jen_trahan"
+    },
+    {
+        "image": "@jen_trahan.jpg",
+        "name": "jen_trahan"
+    },
+    {
+        "image": "@jenewilliams.JPG",
+        "name": "jenewilliams"
+    },
+    {
+        "image": "@jennaraephoto_.JPG",
+        "name": "jennaraephoto_"
+    },
+    {
+        "image": "@jeromegalland_1.jpg",
+        "name": "jeromegalland"
+    },
+    {
+        "image": "@jeromegalland.jpg",
+        "name": "jeromegalland"
+    },
+    {
+        "image": "@joey_jacobson.jpg",
+        "name": "joey_jacobson"
+    },
+    {
+        "image": "@jstersurf.jpg",
+        "name": "jstersurf"
+    },
+    {
+        "image": "@jungletimer.jpg",
+        "name": "jungletimer"
+    },
+    {
+        "image": "@katglorius_new.jpg",
+        "name": "katglorius"
+    },
+    {
+        "image": "@kelsie_felton_new.jpg",
+        "name": "kelsie_felton"
+    },
+    {
+        "image": "@kenziekirk.JPG",
+        "name": "kenziekirk"
+    },
+    {
+        "image": "@kerrycapecod.jpg",
+        "name": "kerrycapecod"
+    },
+    {
+        "image": "@kesliefelton.jpg",
+        "name": "kesliefelton"
+    },
+    {
+        "image": "@KevinMao.JPG",
+        "name": "Kevin Mao"
+    },
+    {
+        "image": "@kristencleary.jpg",
+        "name": "kristencleary"
+    },
+    {
+        "image": "@kwolkoff_1.JPG",
+        "name": "kwolkoff"
+    },
+    {
+        "image": "@kwolkoff.JPG",
+        "name": "kwolkoff"
+    },
+    {
+        "image": "@kympham.JPG",
+        "name": "kympham"
+    },
+    {
+        "image": "@lane_coder.jpg",
+        "name": "lane_coder"
+    },
+    {
+        "image": "@laraparent.jpg",
+        "name": "laraparent"
+    },
+    {
+        "image": "@lineshapecolour_1.JPG",
+        "name": "lineshapecolour"
+    },
+    {
+        "image": "@lineshapecolour.JPG",
+        "name": "lineshapecolour"
+    },
+    {
+        "image": "@lisadetemple.JPG",
+        "name": "lisadetemple"
+    },
+    {
+        "image": "@loumora.jpg",
+        "name": "loumora"
+    },
+    {
+        "image": "@lovevirginiaruth.jpg",
+        "name": "lovevirginiaruth"
+    },
+    {
+        "image": "@lucillelawrence.jpg",
+        "name": "lucillelawrence"
+    },
+    {
+        "image": "@lumalist.jpg",
+        "name": "lumalist"
+    },
+    {
+        "image": "@mafyno_1.jpg",
+        "name": "mafyno"
+    },
+    {
+        "image": "@mafyno.jpg",
+        "name": "mafyno"
+    },
+    {
+        "image": "@mamelopez_1.jpg",
+        "name": "mamelopez"
+    },
+    {
+        "image": "@mamelopez.jpg",
+        "name": "mamelopez "
+    },
+    {
+        "image": "@mamelopez_3.jpg",
+        "name": "mamelopez"
+    },
+    {
+        "image": "@mamelopez_4.jpg",
+        "name": "mamelopez"
+    },
+    {
+        "image": "@matrickphoto.jpg",
+        "name": "matrickphoto"
+    },
+    {
+        "image": "@melwat.jpg",
+        "name": "melwat"
+    },
+    {
+        "image": "@meredithphoto.jpg",
+        "name": "meredithphoto"
+    },
+    {
+        "image": "@mevisualartist.jpg",
+        "name": "mevisualartist"
+    },
+    {
+        "image": "@mikekineman.jpg",
+        "name": "mikekineman"
+    },
+    {
+        "image": "@mikkibrammer.jpg",
+        "name": "mikkibrammer"
+    },
+    {
+        "image": "@mollymrgrt_1.JPG",
+        "name": "mollymrgrt"
+    },
+    {
+        "image": "@mollymrgrt_3.JPG",
+        "name": "mollymrgrt"
+    },
+    {
+        "image": "@mollymrgrt.JPG",
+        "name": "mollymrgrt"
+    },
+    {
+        "image": "@nadinbrendel.jpg",
+        "name": "nadinbrendel"
+    },
+    {
+        "image": "@nibinquiel.jpg",
+        "name": "nibinquiel"
+    },
+    {
+        "image": "@njiacoi.jpg",
+        "name": "njiacoi"
+    },
+    {
+        "image": "@noahsahady.jpg",
+        "name": "noahsahady"
+    },
+    {
+        "image": "@nomadic_habit.jpg",
+        "name": "nomadic_habit"
+    },
+    {
+        "image": "@nylonhk.jpg",
+        "name": "nylonhk"
+    },
+    {
+        "image": "@oddwie.jpg",
+        "name": "oddwie"
+    },
+    {
+        "image": "@philipeastman.jpg",
+        "name": "philipeastman"
+    },
+    {
+        "image": "@photogamy.jpg",
+        "name": "photogamy"
+    },
+    {
+        "image": "@portablesera.JPG",
+        "name": "portablesera"
+    },
+    {
+        "image": "@queenbeesanders_1.jpg",
+        "name": "queenbeesanders"
+    },
+    {
+        "image": "@queenbeesanders_2.jpg",
+        "name": "queenbeesanders"
+    },
+    {
+        "image": "@queenbeesanders.jpg",
+        "name": "queenbeesanders"
+    },
+    {
+        "image": "@rachellederouin.jpg",
+        "name": "rachellederouin"
+    },
+    {
+        "image": "@rachelweider_1.JPG",
+        "name": "rachelweider"
+    },
+    {
+        "image": "@rachelweider_2.jpg",
+        "name": "rachelweider"
+    },
+    {
+        "image": "@rachelweider_3.JPG",
+        "name": "rachelweider"
+    },
+    {
+        "image": "@rachelweider_4.jpg",
+        "name": "rachelweider"
+    },
+    {
+        "image": "@rachelweider.JPG",
+        "name": "rachelweider"
+    },
+    {
+        "image": "@ryanstruck_new.jpg",
+        "name": "ryanstruck"
+    },
+    {
+        "image": "@sabzwong.JPG",
+        "name": "sabzwong"
+    },
+    {
+        "image": "@sallies.JPG",
+        "name": "sallies"
+    },
+    {
+        "image": "@saltandstonepottery_1.JPG",
+        "name": "saltandstonepottery"
+    },
+    {
+        "image": "@saltandstonepottery.JPG",
+        "name": "saltandstonepottery"
+    },
+    {
+        "image": "@sarakerens.jpg",
+        "name": "sarakerens"
+    },
+    {
+        "image": "@savcotter_1.JPG",
+        "name": "savcotter"
+    },
+    {
+        "image": "@savcotter.JPG",
+        "name": "savcotter"
+    },
+    {
+        "image": "@scmphoto.jpg",
+        "name": "scmphoto"
+    },
+    {
+        "image": "@scooteromatours.jpg",
+        "name": "scooteromatours"
+    },
+    {
+        "image": "@sezgiolgac_1.JPG",
+        "name": "sezgiolgac"
+    },
+    {
+        "image": "@sezgiolgac.JPG",
+        "name": "sezgiolgac"
+    },
+    {
+        "image": "@shahrzadphoto_1.jpg",
+        "name": "shahrzadphoto"
+    },
+    {
+        "image": "@shahrzadphoto.jpg",
+        "name": "shahrzadphoto"
+    },
+    {
+        "image": "@shelby_pollard.jpg",
+        "name": "shelby_pollard"
+    },
+    {
+        "image": "@sussdocker.jpg",
+        "name": "sussdocker"
+    },
+    {
+        "image": "@talktonatasha.jpg",
+        "name": "talktonatasha"
+    },
+    {
+        "image": "@taradonnephoto.JPG",
+        "name": "taradonnephoto"
+    },
+    {
+        "image": "@taragrantstudio_1.jpg",
+        "name": "taragrantstudio"
+    },
+    {
+        "image": "@taragrantstudio.jpg",
+        "name": "taragrantstudio"
+    },
+    {
+        "image": "@taryn_kent.jpg",
+        "name": "taryn_kent"
+    },
+    {
+        "image": "@tessamlove.jpg",
+        "name": "tessamlove"
+    },
+    {
+        "image": "@thayerandco.JPG",
+        "name": "thayerandco"
+    },
+    {
+        "image": "@the_line_up_one_fixed.jpg",
+        "name": "the_line_up"
+    },
+    {
+        "image": "@the_line_up_two_fixed.jpg",
+        "name": "the_line_up"
+    },
+    {
+        "image": "@thefella_1.jpg",
+        "name": "thefella"
+    },
+    {
+        "image": "@thefella_2.jpg",
+        "name": "thefella"
+    },
+    {
+        "image": "@thefella_3.jpg",
+        "name": "thefella"
+    },
+    {
+        "image": "@thefella.jpg",
+        "name": "thefella"
+    },
+    {
+        "image": "@tomjohnkubik.jpg",
+        "name": "tomjohnkubik"
+    },
+    {
+        "image": "@twentytwentystudios.jpg",
+        "name": "twentytwentystudios"
+    },
+    {
+        "image": "@valrizzo_1.jpg",
+        "name": "valrizzo"
+    },
+    {
+        "image": "@valrizzo.jpg",
+        "name": "valrizzo"
+    },
+    {
+        "image": "@vivian.p.chen.jpg",
+        "name": "vivian.p.chen"
+    },
+    {
+        "image": "@whitneytravels.jpg",
+        "name": "whitneytravels"
+    },
+    {
+        "image": "@yourgirlabs.jpg",
+        "name": "yourgirlabs"
+    },
+    {
+        "image": "@zioandsons.jpg",
+        "name": "zioandsons"
+    }
+]
+var newHTML = [];
+
+console.log('this is coo'+ people[0].name);
+
+$(document).on("ready", function() {
+
+
+  $.each(people, function(i, value) {
+    newHTML.push('<div class="gram"><a href="http://instagram.com/'+ value.name +'" target="_blank"><img class="lazy" src="images/'+ value.image + '" alt="' + value.name + '" /> <p>'+ value.name + '</p></a></div>');
+  });
+  $(".grid-wrapper").html(newHTML.join("  "));
+
+  $("img.lazy").lazyload();
+});
+
+</script>
+
+<!-- <div class="header-container">
+			<div class="header-links-container">
+
+            <span class="header-links"><a href="about/index.html">Events</a></span>
+            <span class="header-links"><a href="about/index.html">About</a></span>
+			<span class="header-links"><a href="about/masthead.html">Masthead</a></span>
+            <span class="header-links"><a href="about/stockists.html">Stockists</a></span>
+            <span class="header-links"><a href="http://shop.tinyatlasquarterly.com/products/pre-order-the-printed-annual" target="_blank">Shop</a></span>
+            </div>
+</div> -->
+<div class="details">
+<h1>Montauk Show</h1>
+<p>Tiny tlas Quarterly has sponsored a new event were we select awesome photos from our instagram.</p>
+  </div>
+  <div class="grid-wrapper">
+
+  </div>
+
+
+
+
+  <div id="nav-holder"><div id="nav"><a href="../../index.html"><img src="../../images/tiny-atlas-sm.jpg" alt="Tiny Atlas Quarterly"></a></div></div>
+
+</body>
+</html>
