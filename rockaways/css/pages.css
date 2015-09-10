@@ -496,8 +496,8 @@ div.text-box-a a:hover, div.text-box-a a:active {
     width:	38%;
 	
 	background-color:#FFF;  
-	opacity:0.8; 
-    filter:alpha(opacity=80); /* IE transparency */
+	opacity:0.95; 
+    filter:alpha(opacity=95); /* IE transparency */
 	
 	padding: 1.5em 3em 1em 1.5em;	
 	text-align: left;
@@ -667,9 +667,9 @@ div.pg-credits-box img {
  }
  
 /*----------- MOBILE -------------*/
-@media (max-width:640px) {
+@media (max-width:799px) {
 	body { 
-		font-size: 14px;
+		font-size: 16px;
    }
    
    #page-editorial-box-dark {
@@ -733,7 +733,7 @@ div.pg-credits-box img {
 
 }
 
-@media (min-width:641px) and (max-width:999px) {
+@media (min-width:800px) and (max-width:999px) {
 	body { 
 		font-size: 16px;
    }
