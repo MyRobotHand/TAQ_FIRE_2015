@@ -16,12 +16,12 @@ img {
 #nav-holder {
 	position:relative;
 	display:block;
-	width:100%;
+	/*width:100%;*/
 }
 
 #nav {
-	padding: 0% 2% 1% 1.6%;
-	width: 20%;
+	padding: 0% 10px 5px 10px;
+	/*width: 20%;*/
 	z-index:100;
 	position: fixed;
 	bottom: 0;
@@ -604,7 +604,7 @@ div.pg-credits-box img {
 	/* CAPTIONS */
 
 	#nav {
-          width: 26%;
+          /*width: 26%;*/
 	}
 
 	#page-resources-box, #pg-wardrobe {
@@ -746,10 +746,14 @@ height:280px;
 
 a {
 text-decoration: none;
+	color: grey;
+}
+
+a:hover {
+	text-decoration: underline;
 }
 
 a p {
-	color: grey;
 	text-decoration: none;
 	text-transform: lowercase;
 }
@@ -773,7 +777,8 @@ a p {
 @media (max-width:750px) {
 	.details{
 		position: initial;
-		width: 100%;
+		width: calc(100% - 20px);
+
 	}
 	.grid-wrapper {
 		margin: 20px 10px 0 10px;
@@ -781,6 +786,10 @@ a p {
 	}
 	.gram {
 		width: 100%;
+	}
+	#nav{
+		padding: 10px;
+		background-color: #fff;
 	}
 }
 
