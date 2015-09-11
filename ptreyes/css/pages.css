@@ -710,9 +710,9 @@ div.pg-credits-box img {
  }
  
 /*----------- MOBILE -------------*/
-@media (max-width:640px) {
+@media (max-width:799px) {
 	body { 
-		font-size: 14px;
+		font-size: 16px;
    }
    
    #page-editorial-box-dark {
@@ -780,7 +780,7 @@ div.pg-credits-box img {
 
 }
 
-@media (min-width:641px) and (max-width:999px) {
+@media (min-width:800px) and (max-width:999px) {
 	body { 
 		font-size: 16px;
    }
