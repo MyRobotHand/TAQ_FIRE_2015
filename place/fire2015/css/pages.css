@@ -460,8 +460,8 @@ div.pg-box a:hover, div.pg-box a:active {
 		text-align: left;
    }
    
-   #pg-interview-content {
-	font-size: 1.2em;
+   #pg-interview-content, #pg-interview-content p {
+	font-size: 1.0em;
 	line-height: 140%;
 	letter-spacing: 0.1em;
 	color: #000;
@@ -499,7 +499,7 @@ div.pg-box a:hover, div.pg-box a:active {
 		text-align: left;
 	}
 
-	#pg-interview-content {
+	#pg-interview-content, #pg-interview-content p {
 		font-size: 0.86em;
 		line-height: 140%;
 		letter-spacing: 0.1em;
