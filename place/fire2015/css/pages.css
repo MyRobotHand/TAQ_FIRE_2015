@@ -440,6 +440,12 @@ div.pg-box a:hover, div.pg-box a:active {
 	text-decoration:underline;
 }
 
+.pg-interview-half {
+	top:	15%;
+	width:	40%;  
+	left:	55.749128919861%;
+}
+
 /*-------------- MEDIA QUERIES -------------------- */
 /*----------- MOBILE -------------*/
 @media (max-width:640px) {
@@ -452,6 +458,9 @@ div.pg-box a:hover, div.pg-box a:active {
 		top:	15%;
 		width:	40%;  
 		left:	55.749128919861%;*/
+		
+		top: 76.42%; left: 40%; width:52%;
+		
 		float:left;
 		background-color:#FFF;  
 		opacity:0.8; 
@@ -517,8 +526,11 @@ div.pg-box a:hover, div.pg-box a:active {
 		column-gap: 0;
 		column-rule: none;
 		column-width: 100%;
-	}   
+	} 
+	
 }
+
+/* top: 76.42%; left: 30%; width:62%; */
 
 
 /*----------- THE REST -------------*/
@@ -558,7 +570,6 @@ div.pg-box a:hover, div.pg-box a:active {
 		column-rule: none;
 		column-width: 100%;
 	}
-
 }
 
 /*----------- MEDIA QUERIES -------------------- */
