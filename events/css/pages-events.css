@@ -5,6 +5,7 @@ body{
 	font-family: 'NewsGothicBT-RomanCondensed', sans-serif;
 	-webkit-tap-highlight-color: rgba(0,0,0,0);
 	min-height: 540px;
+	height: 100%;
 }
 
 img {
@@ -720,14 +721,27 @@ only screen and (min-device-pixel-ratio : 1.5) {
 
 /*Events code ---------------*/
 .details {
-	width: 200px;
+	width: 300px;
 	position: fixed;
-	margin: 10px 0 0 20px;
+	margin: -50px 0 0 20px;
+	color: #424242;
 }
 
 .grid-wrapper {
-	margin: 80px 0 0 240px;
+	margin: 80px 0 0 320px;
 	max-width: 1200px;
+}
+.img-head{
+	margin: -70px 0 5px 320px;
+  max-width: 1200px;
+	float: left;
+}
+.img-head img{
+		padding: 10px;
+		padding-right: 20px;
+}
+#title-g{
+	margin-top: -25px;
 }
 
 .gram {
@@ -737,12 +751,24 @@ only screen and (min-device-pixel-ratio : 1.5) {
 	padding: 10px;
 }
 
+.gram .hotels {
+	color: #222;
+	font-size: 14px;
+	margin: 0;
+	text-transform: initial;
+}
+
 .details h1{
 	margin-top: -20px;
 }
 /*.gram img {
 height:280px;
 }*/
+
+.details a{
+	color: #000;
+	background-color: #ffee98;
+}
 
 a {
 text-decoration: none;
@@ -755,7 +781,6 @@ a:hover {
 
 a p {
 	text-decoration: none;
-	text-transform: lowercase;
 }
 
 
@@ -772,6 +797,7 @@ a p {
 	.gram {
 		width: 50%;
 	}
+
 }
 
 @media (max-width:750px) {
@@ -779,6 +805,9 @@ a p {
 		position: initial;
 		width: calc(100% - 20px);
 
+	}
+	.img-head{
+		margin: 20px 10px 0 10px;
 	}
 	.grid-wrapper {
 		margin: 20px 10px 0 10px;
