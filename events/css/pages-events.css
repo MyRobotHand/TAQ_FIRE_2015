@@ -802,6 +802,7 @@ a p {
 
 @media (max-width:750px) {
 	.details{
+		margin: 0 0 0 20px;
 		position: initial;
 		width: calc(100% - 20px);
 
